@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <title>TrabajoFinal-Enunciado</title>
+    <link rel="stylesheet" type="text/css" href="Estilo.Css">
+    <style> 
+   
+    </style>
+</head>
+    <body>
+<header>  
+    <div class="logo"> 
+        <img src="THEMOVIEDB.svg" width="" alt="">              <!-- Buscador -->
+    </div>
+    <nav class="espac">
+        <div class="search-bar">
+            <form action="#">
+            <input class="redondeado" class type="text" id="query" value="" placeholder="Ingrese el nombre" />
+            <button class="redondeado2" onclick="submitForm()">Buscar</button>
+              </form>   
+        </div>
+    </nav>    
+</header>  
+<section class="Contenedor" > <!--DIV DEL MENU IZQUIERDO-->
+<div>
+    <p class="esp">Ver las peliculas:</p>
+    <button  class="redondeado3" class="Centrado" onclick="submitFormPopular()">Populares</button>
+    <br><br>
+    <button  class="redondeado3" class="Centrado1" onclick="submitFormPremieres()">Estrenos</button>
+    <br><br>
+    <button  class="redondeado3" class="Centrado2" onclick="submitFormComingSoon()">Proximamente</button>
+    </div> 
+</section>
+  <div>
+  </div>
+
+<section  class="Contenedor2">  <!--DIV DEL MENU DERECHO-->
+    <div>
+    <p>Filtrar por:</p>
+    <b>Año:</b>
+    <input class="input1" type="text" id="year" value="" maxlength="4" placeholder="Año" />
+    <button class="centrado3"  onclick="SubmitYear()">Filtrar</button>
+    <b>Puntuacion:</b>
+    <input class="input1" type="text" id="vote" value="" maxlength="3" placeholder="Numero" />
+    <button class="centrado3" onclick="SubmitRanking()">Filtrar</button>
+    <b>Pagina:</b>
+    <input class="input2" type="text" id="page" value="" maxlength="2" placeholder="Numero" />
+</section>
+<article class="movies" id="movies">
+<div >
+    <div id="list"></div>
+        
+</div>
+<script src="main.js"></script>
+</article>
+</div>
+                        </body>
+                        </html>
